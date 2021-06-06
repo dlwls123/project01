@@ -1,0 +1,44 @@
+﻿<Window x:Class="project01.Main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:project01"
+        mc:Ignorable="d"
+        Title="Main" Height="450" Width="800">
+    <Grid>
+        <Button Content="회원 관리" HorizontalAlignment="Left" Height="28" Margin="688,294,0,0" VerticalAlignment="Top" Width="85" Click="Button_Click"/>
+        <Button Content="시간 추가" HorizontalAlignment="Left" Height="28" Margin="688,250,0,0" VerticalAlignment="Top" Width="85" Click="Button_Click_3"/>
+        <Button Content="회원 추가" HorizontalAlignment="Left" Height="28" Margin="688,339,0,0" VerticalAlignment="Top" Width="85" Click="Button_Click_1"/>
+        <Button Content="상품 판매" HorizontalAlignment="Left" Height="28" Margin="688,384,0,0" VerticalAlignment="Top" Width="85" Click="Button_Click_4"/>
+        <Button Content="22" HorizontalAlignment="Left" Height="35" Margin="40,165,0,0" VerticalAlignment="Top" Width="35"/>
+        <Button Content="18" HorizontalAlignment="Left" Height="35" Margin="136,165,0,0" VerticalAlignment="Top" Width="35"/>
+        <Button Content="2" HorizontalAlignment="Left" Height="35" Margin="413,61,0,0" VerticalAlignment="Top" Width="35"/>
+        <Button Content="24" HorizontalAlignment="Left" Height="35" Margin="40,269,0,0" VerticalAlignment="Top" Width="35"/>
+        <Button Content="3" HorizontalAlignment="Left" Height="35" Margin="339,61,0,0" VerticalAlignment="Top" Width="35"/>
+        <Button Content="19" HorizontalAlignment="Left" Height="35" Margin="135,217,0,0" VerticalAlignment="Top" Width="36"/>
+        <Button Content="7" HorizontalAlignment="Left" Height="35" Margin="413,124,0,0" VerticalAlignment="Top" Width="35"/>
+        <Button Content="20" HorizontalAlignment="Left" Height="35" Margin="136,271,0,0" VerticalAlignment="Top" Width="35"/>
+        <Button Content="4" HorizontalAlignment="Left" Height="35" Margin="268,61,0,0" VerticalAlignment="Top" Width="35"/>
+        <Button Content="21" HorizontalAlignment="Left" Height="35" Margin="40,115,0,0" VerticalAlignment="Top" Width="35"/>
+        <Button Content="15" HorizontalAlignment="Left" Height="35" Margin="413,347,0,0" VerticalAlignment="Top" Width="35"/>
+        <Button Content="1" HorizontalAlignment="Left" Height="35" Margin="482,61,0,0" VerticalAlignment="Top" Width="35"/>
+        <Button Content="16" HorizontalAlignment="Left" Height="35" Margin="482,347,0,0" VerticalAlignment="Top" Width="35"/>
+        <Button Content="14" HorizontalAlignment="Left" Height="35" Margin="339,347,0,0" VerticalAlignment="Top" Width="35"/>
+        <Button Content="13" HorizontalAlignment="Left" Height="35" Margin="268,347,0,0" VerticalAlignment="Top" Width="35"/>
+        <Button Content="23" HorizontalAlignment="Left" Height="35" Margin="40,217,0,0" VerticalAlignment="Top" Width="35"/>
+        <Button Content="5" HorizontalAlignment="Left" Height="36" Margin="268,124,0,0" VerticalAlignment="Top" Width="35"/>
+        <Button Content="6" HorizontalAlignment="Left" Height="35" Margin="336,124,0,0" VerticalAlignment="Top" Width="36"/>
+        <Button Content="17" HorizontalAlignment="Left" Height="35" Margin="136,115,0,0" VerticalAlignment="Top" Width="35"/>
+        <Button Content="8" HorizontalAlignment="Left" Height="35" Margin="482,124,0,0" VerticalAlignment="Top" Width="35"/>
+        <Button Content="12" HorizontalAlignment="Left" Height="35" Margin="268,285,0,0" VerticalAlignment="Top" Width="35"/>
+        <Button Content="11" HorizontalAlignment="Left" Height="35" Margin="339,285,0,0" VerticalAlignment="Top" Width="35"/>
+        <Button Content="10" HorizontalAlignment="Left" Height="35" Margin="413,285,0,0" VerticalAlignment="Top" Width="35"/>
+        <Button Content="9" HorizontalAlignment="Left" Height="35" Margin="482,285,0,0" VerticalAlignment="Top" Width="35"/>
+        <Button Content="카운터" HorizontalAlignment="Left" Height="95" Margin="614,112,0,0" VerticalAlignment="Top" Width="50"/>
+        <Label Content="/24" HorizontalAlignment="Left" Height="28" Margin="122,10,0,0" VerticalAlignment="Top" Width="67"/>
+        <Label Content="0" HorizontalAlignment="Left" Height="28" Margin="58,10,0,0" VerticalAlignment="Top" Width="64"/>
+        <Button Content="로그아웃" HorizontalAlignment="Left" Height="28" Margin="706,10,0,0" VerticalAlignment="Top" Width="67" Click="Button_Click_2"/>
+
+    </Grid>
+</Window>
