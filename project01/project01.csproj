@@ -6,4 +6,36 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="김치볶음밥.jpg" />
+    <None Remove="딸기스무디.jpg" />
+    <None Remove="떡볶이.png" />
+    <None Remove="라면.png" />
+    <None Remove="만두.jpg" />
+    <None Remove="밥.jpg" />
+    <None Remove="소떡소떡.jpg" />
+    <None Remove="아메리카노.png" />
+    <None Remove="아이스티.jpg" />
+    <None Remove="오레오스무디.jpg" />
+    <None Remove="주먹밥.jpg" />
+    <None Remove="짜장 떡볶이.jpg" />
+    <None Remove="짜파게티.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="김치볶음밥.jpg" />
+    <Resource Include="딸기스무디.jpg" />
+    <Resource Include="떡볶이.png" />
+    <Resource Include="라면.png" />
+    <Resource Include="만두.jpg" />
+    <Resource Include="밥.jpg" />
+    <Resource Include="소떡소떡.jpg" />
+    <Resource Include="아메리카노.png" />
+    <Resource Include="아이스티.jpg" />
+    <Resource Include="오레오스무디.jpg" />
+    <Resource Include="주먹밥.jpg" />
+    <Resource Include="짜장 떡볶이.jpg" />
+    <Resource Include="짜파게티.jpg" />
+  </ItemGroup>
+
 </Project>
