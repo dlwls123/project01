@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -17,6 +18,8 @@ namespace project01
     /// </summary>
     public partial class Main : Window
     {
+        //MySqlConnection conn = new MySqlConnection("Server=localhost;Databases=user;Uid=root;Pwd=root;");
+
         public Main()
         {
             InitializeComponent();

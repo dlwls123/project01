@@ -8,19 +8,16 @@
         Title="회원 추가" Height="450" Width="650">
     <Grid>
         <Button Content="회원 추가 완료" HorizontalAlignment="Left" Height="40" Margin="441,354,0,0" VerticalAlignment="Top" Width="106" Click="Button_Click"/>
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="230,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140"/>
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="230,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140"/>
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="230,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140"/>
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="230,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140"/>
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="230,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140"/>
+        <TextBox x:Name="name" HorizontalAlignment="Left" Height="30" Margin="230,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Text="{Binding name}" />
+        <TextBox x:Name="id" HorizontalAlignment="Left" Height="30" Margin="230,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Text="{Binding id}" />
+        <TextBox x:Name="pwd" HorizontalAlignment="Left" Height="30" Margin="230,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Text="{Binding pwd}"/>
+        <TextBox x:Name="phone" HorizontalAlignment="Left" Height="30" Margin="230,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Text="{Binding phone}"/>
+        <TextBox x:Name="birth" HorizontalAlignment="Left" Height="30" Margin="230,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Text="{Binding birth}"/>
         <TextBlock HorizontalAlignment="Left" Height="25" Margin="88,37,0,0" Text="이름" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Height="24" Margin="88,84,0,0" Text="아이디" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Height="25" Margin="88,132,0,0" Text="비밀번호" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Height="25" Margin="88,195,0,0" Text="전화번호" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Height="25" Margin="88,257,0,0" Text="생년월일" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Left" Height="25" Margin="88,323,0,0" Text="성별" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" FontWeight="Bold"/>
-        <CheckBox Content="남자" HorizontalAlignment="Left" Height="13" Margin="179,323,0,0" VerticalAlignment="Top" Width="75"/>
-        <CheckBox Content="여자" HorizontalAlignment="Left" Height="13" Margin="268,324,0,0" VerticalAlignment="Top" Width="64"/>
         <Button Content="Home" HorizontalAlignment="Left" Height="32" Margin="586,358,0,0" VerticalAlignment="Top" Width="36" Click="Button_Click_1"/>
 
 
