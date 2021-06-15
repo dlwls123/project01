@@ -49,10 +49,7 @@
         <Label Content="만두" HorizontalAlignment="Left" Height="25" Margin="51,413,0,0" VerticalAlignment="Top" Width="51"/>
         <Label Content="주먹밥" Grid.Column="1" HorizontalAlignment="Left" Height="29" Margin="1,413,0,0" VerticalAlignment="Top" Width="62"/>
         <Label Content="밥" Grid.Column="1" HorizontalAlignment="Left" Height="26" Margin="170,409,0,0" VerticalAlignment="Top" Width="52"/>
-        <ComboBox Grid.Column="1" HorizontalAlignment="Left" Height="34" Margin="280,371,0,0" VerticalAlignment="Top" Width="94" >
-            <ComboBoxItem Content="아메리카노"/>
-            <ComboBoxItem Content="아이스티"/>
-        </ComboBox>
+        <Button Content="주문창" Grid.Column="1" HorizontalAlignment="Left" Height="56" Margin="374,392,0,0" VerticalAlignment="Top" Width="89" Click="Button_Click_3"/>
 
     </Grid>
 </Window>

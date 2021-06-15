@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -43,6 +44,11 @@ namespace project01
             Close();
         }
 
-       
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            order2 order2 = new order2();
+            order2.Show();
+
+        }
     }
 }

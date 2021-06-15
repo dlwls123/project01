@@ -7,7 +7,12 @@
         mc:Ignorable="d"
         Title="시간 추가" Height="550" Width="650">
     <Grid>
-        <Button Content="Home" HorizontalAlignment="Left" Height="29" Margin="598,483,0,0" VerticalAlignment="Top" Width="42" Click="Button_Click"/>
+        <Button Content="Home" HorizontalAlignment="Left" Height="29" Margin="551,313,0,0" VerticalAlignment="Top" Width="42" Click="Button_Click"/>
+        <DataGrid x:Name="datagrid" HorizontalAlignment="Left" Height="183" Margin="43,102,0,0" VerticalAlignment="Top" Width="534"/>
+        <TextBox x:Name="finduser" HorizontalAlignment="Left" Height="36" Margin="131,38,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
+        <Button Content="회원 id 검색" HorizontalAlignment="Left" Height="42" Margin="381,35,0,0" VerticalAlignment="Top" Width="98" Click="Button_Click_1"/>
+        <Button Content="시간 추가" HorizontalAlignment="Left" Height="32" Margin="381,368,0,0" VerticalAlignment="Top" Width="70" Click="Button_Click_2"/>
+        <ComboBox x:Name="combobox" HorizontalAlignment="Left" Height="32" Margin="225,368,0,0" VerticalAlignment="Top" Width="111"/>
 
     </Grid>
 </Window>
