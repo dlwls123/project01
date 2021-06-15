@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="회원 관리" Height="450" Width="700">
     <Grid>
-        <DataGrid HorizontalAlignment="Center" Height="229" Margin="0,195,0,0" VerticalAlignment="Top" Width="680"/>
-        <Button Content="회원 검색" HorizontalAlignment="Left" Height="49" Margin="516,76,0,0" VerticalAlignment="Top" Width="122"/>
-        <TextBox HorizontalAlignment="Left" Height="49" Margin="168,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223"/>
-        <Button Content="Home" HorizontalAlignment="Left" Height="30" Margin="10,10,0,0" VerticalAlignment="Top" Width="43" Click="Button_Click"/>
+        <DataGrid x:Name="datagrid" HorizontalAlignment="Center" Height="180" Margin="0,195,0,0" VerticalAlignment="Top" Width="640"/>
+        <Button Content="회원 검색" HorizontalAlignment="Left" Height="49" Margin="496,76,0,0" VerticalAlignment="Top" Width="122" Click="Button_Click_1"/>
+        <TextBox x:Name="finduser" HorizontalAlignment="Left" Height="49" Margin="168,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223"/>
+        <Button Content="Home" HorizontalAlignment="Left" Height="30" Margin="30,29,0,0" VerticalAlignment="Top" Width="43" Click="Button_Click"/>
 
     </Grid>
 </Window>

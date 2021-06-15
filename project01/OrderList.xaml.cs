@@ -1,5 +1,7 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -27,6 +29,34 @@ namespace project01
             Order order = new Order();
             order.Show();
             Close();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            string consql = "Server=localhost;Database=project01;Uid=root;Pwd=root;";
+            MySqlConnection con = new MySqlConnection(consql);
+
+            con.Open();
+
+            try
+            {
+
+
+                string select = "select * from orders";
+                MySqlDataAdapter adp = new MySqlDataAdapter(select, con);
+
+                //MySqlDataReader reader = cmd.ExecuteReader();
+
+                DataSet ds = new DataSet();
+                adp.Fill(ds);
+                datagrid.ItemsSource = ds.Tables[0].DefaultView;
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

@@ -18,21 +18,6 @@ namespace project01
     /// </summary>
     public partial class addclient : Window
     {
-        /*public string name;
-        public string id;
-        public string pwd;
-        public int phone;
-        public int birth;
-       
-        try 
-        {
-
-        MySqlConnection conn = new MySqlConnection("Server=localhost;Databases=user;Uid=root;Pwd=root;")
-    }
-    catch (Exception ex)
-        {
-            Messagebox.Show("error");
-        }*/
         
 
 
@@ -47,25 +32,29 @@ namespace project01
             {
                 try
                 {
-                    var connectionString = "server=localhost;user=root;database=project01;password=root";
-                    var connection = new MySqlConnection(connectionString);
+                    string consql = "Server=localhost;Database=project01;Uid=root;Pwd=root;";
+                    MySqlConnection con = new MySqlConnection(consql);
 
-                    connection.Open();
-                    //MySqlConnection conn = new MySqlConnection("Server=localhost;Database=project01;Uid=root;Pwd=root;");
+                    con.Open();
 
-                    //conn.Open();
-                    MessageBox.Show("데베 연결이 잘 됨");
+                    //MessageBox.Show("데베 연결이 잘 됨");
 
-                    string insert = "INSERT INTO client VALUES('" + name.Text + "'," + id.Text + "',"+pwd.Text + "'," + phone.Text + "'," + birth.Text +")";
-                    //MySqlCommand command = new MySqlCommand(insert, conn);
-                    var mySqlcommand = new MySqlCommand(insert, connection);
+                    string insert = "INSERT INTO client(name, id, pwd, phone, birth) VALUES('" + name.Text + "','" + id.Text + "','" + pwd.Text + "','" + phone.Text + "','" + birth.Text +"')";
+                    MySqlCommand cmd = new MySqlCommand(insert, con);
 
-                    MessageBox.Show("회원 추가가 완료되었습니다.");
+                        if (cmd.ExecuteNonQuery() == 1)
+                        {
+                            MessageBox.Show("회원 추가가 완료되었습니다.");
+                        }
+                        else
+                        {
+                            MessageBox.Show("회원 추가가 실패 하였습니다.");
+                        }
+
                     Main main = new Main();
                     main.Show();
                     Close();
-                    //conn.Close();
-                    connection.Close();
+                    con.Close();
    
                 }
                 catch (Exception ex)

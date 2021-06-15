@@ -60,5 +60,19 @@ namespace project01
             order.Show();
             Close();
         }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            //if(seat1=login)
+            //{
+                Seat02 seat02 = new Seat02();
+                seat02.Show();
+                Close();
+            //}
+            //else
+            //{
+
+            //}
+        }
     }
 }

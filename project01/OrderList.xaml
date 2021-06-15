@@ -19,7 +19,8 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <DataGrid HorizontalAlignment="Center" Height="289" Margin="0,85,0,0" VerticalAlignment="Top" Width="680"/>
-        <Button Content="뒤로가기" HorizontalAlignment="Left" Height="20" Margin="638,10,0,0" VerticalAlignment="Top" Width="52" Click="Button_Click"/>
+        <DataGrid x:Name="datagrid" HorizontalAlignment="Center" Height="257" Margin="0,85,0,0" VerticalAlignment="Top" Width="505"/>
+        <Button Content="뒤로가기" HorizontalAlignment="Left" Height="20" Margin="551,33,0,0" VerticalAlignment="Top" Width="52" Click="Button_Click"/>
+        <Button Content="주문 내역 불러오기" HorizontalAlignment="Left" Height="26" Margin="290,34,0,0" VerticalAlignment="Top" Width="113" Click="Button_Click_1"/>
     </Grid>
 </Window>

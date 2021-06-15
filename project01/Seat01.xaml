@@ -23,6 +23,7 @@
         <TextBox HorizontalAlignment="Left" Height="30" Margin="176,91,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="180"/>
         <TextBox HorizontalAlignment="Left" Height="30" Margin="176,157,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="180"/>
         <TextBox HorizontalAlignment="Left" Height="30" Margin="176,223,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="180"/>
+        <Button Content="사용 종료" HorizontalAlignment="Left" Height="42" Margin="451,282,0,0" Grid.Row="1" VerticalAlignment="Top" Width="102"/>
 
     </Grid>
 </Window>

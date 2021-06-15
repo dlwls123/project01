@@ -22,7 +22,7 @@
         <Button Content="4" HorizontalAlignment="Left" Height="35" Margin="268,61,0,0" VerticalAlignment="Top" Width="35"/>
         <Button Content="21" HorizontalAlignment="Left" Height="35" Margin="40,115,0,0" VerticalAlignment="Top" Width="35"/>
         <Button Content="15" HorizontalAlignment="Left" Height="35" Margin="413,347,0,0" VerticalAlignment="Top" Width="35"/>
-        <Button Content="1" HorizontalAlignment="Left" Height="35" Margin="482,61,0,0" VerticalAlignment="Top" Width="35"/>
+        <Button x:Name="seat1" Content="1" HorizontalAlignment="Left" Height="35" Margin="482,61,0,0" VerticalAlignment="Top" Width="35" Click="Button_Click_5"/>
         <Button Content="16" HorizontalAlignment="Left" Height="35" Margin="482,347,0,0" VerticalAlignment="Top" Width="35"/>
         <Button Content="14" HorizontalAlignment="Left" Height="35" Margin="339,347,0,0" VerticalAlignment="Top" Width="35"/>
         <Button Content="13" HorizontalAlignment="Left" Height="35" Margin="268,347,0,0" VerticalAlignment="Top" Width="35"/>

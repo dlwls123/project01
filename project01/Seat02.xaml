@@ -8,9 +8,11 @@
         Title="빈 좌석" Height="550" Width="650">
     <Grid>
         <Label Content="좌석 번호" HorizontalAlignment="Left" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="90" FontSize="14"/>
-        <DataGrid HorizontalAlignment="Center" Height="282" Margin="0,242,0,0" VerticalAlignment="Top" Width="630"/>
-        <TextBox HorizontalAlignment="Left" Height="35" Margin="156,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
-        <Button Content="검색" HorizontalAlignment="Left" Height="35" Margin="398,101,0,0" VerticalAlignment="Top" Width="74"/>
+        <Button Content="회원 로그인" HorizontalAlignment="Left" Height="48" Margin="456,422,0,0" VerticalAlignment="Top" Width="133" Click="Button_Click"/>
+        <Label Content="ID" HorizontalAlignment="Left" Height="33" Margin="55,134,0,0" VerticalAlignment="Top" Width="107"/>
+        <Label Content="PASSWORD" HorizontalAlignment="Left" Height="33" Margin="55,237,0,0" VerticalAlignment="Top" Width="107"/>
+        <TextBox x:Name="id" HorizontalAlignment="Center" Height="33" Margin="0,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188"/>
+        <TextBox x:Name="pwd" HorizontalAlignment="Center" Height="33" Margin="0,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188"/>
 
     </Grid>
 </Window>

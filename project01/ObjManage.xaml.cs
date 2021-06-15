@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -9,6 +10,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using MySql.Data;
+using System.Data;
 
 namespace project01
 {
@@ -27,6 +30,36 @@ namespace project01
             Order order = new Order();
             order.Show();
             Close();
+        }
+
+        private void outdatagrid_Click(object sender, RoutedEventArgs e)
+        {
+            string consql = "Server=localhost;Database=project01;Uid=root;Pwd=root;";
+            MySqlConnection con = new MySqlConnection(consql);
+
+            con.Open();
+
+            try
+            {
+                
+
+                string select = "select * from objmanage";
+                MySqlDataAdapter adp = new MySqlDataAdapter(select, con);
+
+                //MySqlDataReader reader = cmd.ExecuteReader();
+
+                DataSet ds = new DataSet();
+                adp.Fill(ds);
+                datagrid.ItemsSource = ds.Tables[0].DefaultView;
+                
+
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
         }
     }
 }
