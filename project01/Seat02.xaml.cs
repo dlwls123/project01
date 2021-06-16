@@ -27,19 +27,23 @@ namespace project01
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+
+            string consql = "Server=localhost;Database=project01;Uid=root;Pwd=root;";
+            MySqlConnection con = new MySqlConnection(consql);
+
+            
+
             try
             {
-                string consql = "Server=localhost;Database=project01;Uid=root;Pwd=root;";
-                MySqlConnection con = new MySqlConnection(consql);
-
                 con.Open();
 
-                string select = "select * from client" + " where id ='" + id.Text + "'and pwd='" + pwd.Text + "';";
+                string select = "select * from client" + " where id ='" + id.Text + "' and pwd='" + pwd.Text + "';";
+                //+ count.Text + "','" + combobox.Text + "')";
 
                 MySqlCommand cmd = new MySqlCommand(select, con);
 
                 MySqlDataReader reader = cmd.ExecuteReader();
-               
+            
                 if(reader.Read())
                 {
                     if(id.Text == reader["id"].ToString() && pwd.Text == reader["pwd"].ToString())
@@ -55,7 +59,7 @@ namespace project01
                             MessageBox.Show("로그인 실패.");
                         }*/
 
-                        //Main
+                        
 
                         Main main = new Main();
                         main.Show();
@@ -65,8 +69,7 @@ namespace project01
                     {
                         MessageBox.Show("로그인 실패");
                     }
-                    
-
+                 
 
                 }
                 con.Close();
